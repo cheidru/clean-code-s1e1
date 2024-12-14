@@ -44,7 +44,7 @@ ul {
 .list-item, .section-title{
   list-style:none;
 }
-input,button{
+input, button{
   outline:none;
 }
 /* end reset */
@@ -118,7 +118,7 @@ input,button{
   font-size: 18px;
   width: 226px;
 }
-.list-item >    [type="text"] {
+.list-item > [type="text"] {
   width: 226px
 }
 .btn.delete #matrix-img {
