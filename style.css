@@ -12,11 +12,15 @@
   text-align: right;
 }
 
-.matrix .matrix__info {
+.matrix__img {
   width: 100%;
 }
 
-.matrix .matrix__info {
+.matrix__info {
+  width: 100%;
+}
+
+.matrix__info {
   font-family: fantasy, cursive;
 }
 
@@ -30,6 +34,7 @@
   display: block;
   width: 500px;
   margin: 0 auto 0;
+  padding: 1em 0;
 }
 
 .task {
@@ -49,17 +54,19 @@ ul {
 }
 
 .list-item,
-.section-title{
+.planner-section__title {
   list-style: none;
 }
 
 input,
-button{
+button {
   outline: none;
 }
 /* end reset */
 
-.btn {
+.add,
+.edit,
+.delete {
   background: none;
   border: 0px;
   color: #888;
@@ -69,12 +76,14 @@ button{
   cursor: pointer;
 }
 
-.btn:hover {
+.add:hover,
+.edit:hover,
+.delete:hover {
   color: #3a3a3a;
 }
 
 /* Heading */
-.section-title {
+.planner-section__title {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -140,13 +149,13 @@ button{
   width: 226px;
 }
 
-.btn.delete .matrix__img {
+.delete-btn-img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.btn.delete .matrix__info:hover {
+.delete-btn-img:hover {
   transform: rotateZ(0);
 }
 
