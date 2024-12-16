@@ -12,11 +12,11 @@
   text-align: right;
 }
 
-.matrix #matrix-img {
+.matrix .matrix__info {
   width: 100%;
 }
 
-.matrix .more-inf {
+.matrix .matrix__info {
   font-family: fantasy, cursive;
 }
 
@@ -38,7 +38,7 @@
   flex-grow: 1;
 }
 
-.task-row-wrapper {
+.planner-section__task-row-wrapper {
   display: flex;
 }
 
@@ -140,18 +140,18 @@ button{
   width: 226px;
 }
 
-.btn.delete #matrix-img {
+.btn.delete .matrix__img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.btn.delete #matrix-img:hover {
+.btn.delete .matrix__info:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-#completed-tasks .task {
+.planner-section__completed-tasks .task {
   text-decoration: line-through;
   color: #888;
 }
